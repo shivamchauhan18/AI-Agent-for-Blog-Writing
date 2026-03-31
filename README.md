@@ -1,4 +1,4 @@
-# AI Blog Generation Agent (LangGraph + LLM Agents)
+# AI Blog Generation Agent (LangGraph)
 
 ## Overview
 
@@ -32,15 +32,14 @@ pip install -r requirements.txt
 
 ### Install Ollama
 
-ollama pull gemma3:270m
-
 ### Environment variables (.env)
 
-TAVILY_API_KEY=your_key GOOGLE_API_KEY=your_key
+- TAVILY_API_KEY=your_key (for web search)
+- GOOGLE_API_KEY=your_key (for image generation)
 
 ## Running
 
-python main.py
+streamlit run frontent.py
 
 ## Technologies
 
@@ -51,8 +50,4 @@ python main.py
 -   Tavily Search
 -   Google Gemini Image API
 
-## Resume Description
 
-Developed a LangGraph‑based autonomous AI agent that generates technical
-blogs using planning, RAG, parallel worker execution, and multimodal
-image generation.
